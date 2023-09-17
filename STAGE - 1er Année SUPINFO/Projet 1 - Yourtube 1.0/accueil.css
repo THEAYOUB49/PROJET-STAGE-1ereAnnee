@@ -1,0 +1,295 @@
+body, html{
+    background: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+
+#siteLogo {
+    height: 20px;
+    width: auto;
+
+}
+
+
+
+
+
+
+#profile {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#profileImage {
+    height: 35px;
+    width: auto;
+    border-radius: 50%;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+#notificationIcon {
+    height: 25px;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+#searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+}
+
+#searchBar {
+    width: 576px;
+    height: 40px;
+    background-color: #121212;
+    color: white;
+    border: 1px solid rgba(80, 78, 78, 0.88);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: medium;
+}
+
+#searchButton {
+    width: 64px;
+    height: 40px;
+    background-color: #FFFFFF1A;
+    color: white;
+    border: 1px solid rgba(80, 78, 78, 0.88);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: none;
+    outline: none;
+}
+
+#searchButton img {
+    width: 60%;
+    height: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+#menuContainer {
+    display: flex;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#leftArrow, #rightArrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    cursor: pointer;
+}
+
+#menuWrapper {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    padding: 0 15%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    margin: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+#menu::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.menuItem {
+    margin-right: 10px;
+    color: white;
+    background-color: #FFFFFF1A;
+    border-radius: 8px;
+    height: 32px;
+    width: auto;
+    border: none;
+    outline: none;
+    white-space: nowrap;
+    padding: 5px 10px;
+}
+
+
+#leftArrow {
+    left: 5px;
+}
+
+#rightArrow {
+    right: 5px;
+}
+
+#leftArrow:hover, #rightArrow:hover {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav a:hover {
+    color: #f1f1f1;
+}
+
+.sideNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sideNav img {
+    width: 100px;
+    height: auto; 
+
+}
+
+@media screen and (max-height: 450px) {
+    .sideNav {padding-top: 15px;}
+    .sideNav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+.video {
+    width: 100%;
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding:30px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+
+.video-item {
+    flex: 0 0 24%;
+    box-sizing: border-box;
+}
+
+
+.video-item iframe {
+    width: 331.98px; 
+    height: 201.92px;
+    border-radius: 20px;
+    
+}
+
+
+.video-info {
+    display: flex;
+    width: 291.98px;
+    height: 100px;
+}
+.video-info .profile-pic {
+    width: 36px;
+    height: 36px;
+    padding-top: 10px;
+    border-radius:50px;
+}
+.video-info .video-text {
+    width: 286.98px;
+    height: 44px;
+    overflow: auto;
+    color: white;
+    padding: 15px;
+}
